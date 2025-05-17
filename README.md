@@ -38,13 +38,14 @@ How to Use
 Run the script with any string-based expression such as "6+2*0-4" or "66*23+2*0-4". The script will print the minimum and maximum values and the expressions that yield those results.
 Example Output
 
-Expression: 6+20-4
-Min Value: -32 from ((6+2)(0-4))
+Expression: 6+2*0-4
+Min Value: -32 from ((6+2)*(0-4))
 Max Value: 2 from ((6+(2*0))-4)
 
-Expression: 6623+20-4
-Min Value: -6600 from ((66*(23+2))(0-4))
-Max Value: 1518 from ((6623)+(2*(0-4)))
+Expression: 66*23+2*0-4
+Min Value: -6600 from (66*(23+2))*(0-4)
+Max Value: 1518 from (66*23)+(2*(0)(-4)))
+
 Dependencies
 
 Python 3.6 or higher
