@@ -1,3 +1,29 @@
+"""
+Original Problem:
+Parentheses bonus
+Your boss has written an arithmetic expression of n terms to compute your annual bonus, 
+but permits you to parenthesize it however you wish. 
+Give an efficient algorithm to design the parenthesizastion to maximize the value. 
+for the expression: 
+
+6+2*0-4
+
+there exist parenthesizations with values ranging from 2 to -32
+"""
+
+"""
+Problem Explaination:
+Given an expression as a string, place parentheses anywhere to 
+find the largest possible result
+
+Our interperetation of the Problem:
+parentheses can be placed around numbers
+subproblems are based on operators, or multiplication introduced by parentheses placement
+there is also division (not included in original example)
+technically parentheses can be placed between digits in multi-digit numbers (Redundant?)
+equations can contain/produce non-integers
+"""
+
 from functools import lru_cache
 import operator
 
